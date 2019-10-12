@@ -17,3 +17,11 @@ class Calculator:
     nums_sum = self.sum(nums)
     result = nums_sum / l
     return result
+  def mettocm(self, nums):
+    conv = 100
+    result = nums*conv
+    return result
+  def mettocm(self, nums):
+    conv = 1/100
+    result = nums*conv
+    return result

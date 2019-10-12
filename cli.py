@@ -19,6 +19,10 @@ def calculate(operation, integers):
     return calc.multiply(integers)
   if (operation == 'average'):
     return calc.average(integers)
+  if (operation == 'meter_to cm'):
+    return calc.mettocm(integers)
+  if (operation == 'cm to meter'):
+    return calc.cmtomet(integers)
   return 0
 
 result = calculate(args.operation, args.integers)
