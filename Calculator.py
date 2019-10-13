@@ -19,5 +19,7 @@ class Calculator:
     result = nums_sum / l
     return result
   def sine(self,nums):
-    result = math.sin(nums)
-    return result  
+    result = []
+    for i in nums:
+        result.append(math.sin(i))
+    return result
