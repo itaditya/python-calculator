@@ -19,9 +19,15 @@ def calculate(operation, integers):
     return calc.multiply(integers)
   if (operation == 'average'):
     return calc.average(integers)
+  if (operation == 'cm_to_m'):
+    return calc.cm_to_metres(integers)
   return 0
 
 result = calculate(args.operation, args.integers)
 print('------')
-print(result)
+if isinstance(result, list):
+  for i in result:
+    print(i)
+else:
+  print(result)
 print('------')
