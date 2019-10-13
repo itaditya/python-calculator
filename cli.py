@@ -20,7 +20,9 @@ def calculate(operation, integers):
   if (operation == 'average'):
     return calc.average(integers)
   if (operation == 'tangent'):
-    return calc.tangent(integers)  
+    return calc.tangent(integers) 
+  if (operation == 'cosine'):
+    return calc.cosine(integers) 
   return 0
 
 result = calculate(args.operation, args.integers)

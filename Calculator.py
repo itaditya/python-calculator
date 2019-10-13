@@ -1,5 +1,6 @@
+import math
 class Calculator:
-  import math
+  
   def sum(self, nums):
     val = 0
     for n in nums:
@@ -20,5 +21,8 @@ class Calculator:
     return result
   def tangent(self,nums):
     result = math.tan(nums)
+    return result
+  def cosine(self,nums):
+    result = math.cos(nums)
     return result
 
