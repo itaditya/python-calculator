@@ -19,6 +19,8 @@ def calculate(operation, integers):
     return calc.multiply(integers)
   if (operation == 'average'):
     return calc.average(integers)
+  if (operation == 'sine'):
+    return calc.sine(integers)  
   return 0
 
 result = calculate(args.operation, args.integers)

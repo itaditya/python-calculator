@@ -1,3 +1,4 @@
+import math
 class Calculator:
   def sum(self, nums):
     val = 0
@@ -17,3 +18,6 @@ class Calculator:
     nums_sum = self.sum(nums)
     result = nums_sum / l
     return result
+  def sine(self,nums):
+    result = math.sin(nums)
+    return result  
