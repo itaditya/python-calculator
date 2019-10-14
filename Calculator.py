@@ -17,10 +17,8 @@ class Calculator:
     nums_sum = self.sum(nums)
     result = nums_sum / l
     return result
-  def cm_to_metres(self, nums):
-    results_list = []
-    for i in nums:
-      metres = i/100
-      results_list.append(str(i) + "cm = " + str(metres) + "m")
-
-    return(results_list)
+  def cm_to_m(self, nums):
+    cm_to_m_unit = 100
+    result = list(map(lambda x: x/cm_to_m_unit, nums))
+    return result
+ 
