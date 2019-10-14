@@ -1,4 +1,6 @@
+import math
 class Calculator:
+  
   def sum(self, nums):
     val = 0
     for n in nums:
@@ -17,7 +19,11 @@ class Calculator:
     nums_sum = self.sum(nums)
     result = nums_sum / l
     return result
-  def m_to_cm(self, nums):
-  	m_to_cm_unit = 100
-  	result = list(map(lambda x:m_to_cm_unit*x, nums))
-  	return result
+
+  def tan(self,nums):
+    result = list(map(math.tan,nums))
+    return result
+
+
+
+
