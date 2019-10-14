@@ -19,14 +19,8 @@ class Calculator:
     nums_sum = self.sum(nums)
     result = nums_sum / l
     return result
-  def tangent(self,nums):
-    result = []
-    for i in nums:
-        result.append(math.tan(i))
+  def tan(self,nums):
+    result = list(map(math.tan,nums))
     return result
- def cosine(self,nums):
-    result = []
-    for i in nums:
-        result.append(math.cos(i))
-    return result
+
 
