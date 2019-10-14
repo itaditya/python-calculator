@@ -21,3 +21,9 @@ class Calculator:
   def cos(self,nums):
     result = list(map(math.cos,nums))
     return result
+
+  def m_to_cm(self, nums):
+  	m_to_cm_unit = 100
+  	result = list(map(lambda x:m_to_cm_unit*x, nums))
+  	return result
+
