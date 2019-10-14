@@ -19,8 +19,13 @@ def calculate(operation, integers):
     return calc.multiply(integers)
   if (operation == 'average'):
     return calc.average(integers)
+
   if (operation == 'sin'):
     return calc.sin(integers)  
+
+  if (operation == 'm-cm'):
+  	return '\n'.join(map(lambda x:str(x), calc.m_to_cm(integers)))
+
   return 0
 
 result = calculate(args.operation, args.integers)
