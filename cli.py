@@ -19,6 +19,8 @@ def calculate(operation, integers):
     return calc.multiply(integers)
   if (operation == 'average'):
     return calc.average(integers)
+  if (operation == 'cm-m'):
+     return ' '.join(map(lambda x: str(x), calc.cm_to_m(integers)))
   if (operation == 'm-cm'):
   	return '\n'.join(map(lambda x:str(x), calc.m_to_cm(integers)))
   return 0
