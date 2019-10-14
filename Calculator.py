@@ -18,8 +18,6 @@ class Calculator:
     nums_sum = self.sum(nums)
     result = nums_sum / l
     return result
-  def sine(self,nums):
-    result = []
-    for i in nums:
-        result.append(math.sin(i))
+  def sin(self,nums):
+    result = list(map(math.sin,nums))
     return result
