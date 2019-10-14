@@ -21,4 +21,7 @@ class Calculator:
     cm_to_m_unit = 100
     result = list(map(lambda x: x/cm_to_m_unit, nums))
     return result
- 
+  def m_to_cm(self, nums):
+  	m_to_cm_unit = 100
+  	result = list(map(lambda x:m_to_cm_unit*x, nums))
+  	return result
