@@ -19,8 +19,11 @@ class Calculator:
     nums_sum = self.sum(nums)
     result = nums_sum / l
     return result
+
   def tan(self,nums):
     result = list(map(math.tan,nums))
     return result
+
+
 
 
