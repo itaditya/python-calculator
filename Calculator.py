@@ -1,3 +1,4 @@
+import math
 class Calculator:
   def sum(self, nums):
     val = 0
@@ -16,4 +17,7 @@ class Calculator:
     l = len(nums)
     nums_sum = self.sum(nums)
     result = nums_sum / l
+    return result
+  def cos(self,nums):
+    result = list(map(math.cos,nums))
     return result
