@@ -33,3 +33,11 @@ Note- You can enter as many numbers as you want. Try running `python3 cli.py ave
 ### How to add new operations
 1. Define a new method in `Calculator.py`.
 1. Add the condition for calling new method in the `calculate` function of `cli.py`.
+
+## How to lint and format code
+1. I use autopep8 for this.
+1. One important thing is instead of messing around with complicated virtualenv setup, I opted for `pipenv`.
+1. Install `pipenv` globally `pip3 install pipenv`.
+1. Enter a virtual env for this project using `pipenv shell`.
+1. Install all the project dependencies with `pipenv install`.
+1. Format code with `sh ./scripts/format.sh`.
