@@ -20,8 +20,13 @@ class Calculator:
     result = nums_sum / l
     return result
 
+
   def cos(self,nums):
     result = list(map(math.cos,nums))
+
+  def sin(self,nums):
+    result = list(map(math.sin,nums))
+
     return result
 
   def m_to_cm(self, nums):
@@ -33,6 +38,7 @@ class Calculator:
   def tan(self,nums):
     result = list(map(math.tan,nums))
     return result
+
 
 
 
