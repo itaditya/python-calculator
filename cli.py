@@ -5,8 +5,7 @@ method_list = [func for func in dir(Calculator) if callable(
     getattr(Calculator, func)) and not func.startswith("__")]
 allowed_methods_help = '*' + '* or *'.join(method_list) + '*'
 
-parser = argparse.ArgumentParser(
-    description='Calculate ' + allowed_methods_help + ' of the numbers you provide')
+parser = argparse.ArgumentParser(description='Calculate ' + allowed_methods_help + ' of the numbers you provide')
 
 parser.add_argument('operation', type=str,
                     help='One of the following operations: ' + allowed_methods_help)

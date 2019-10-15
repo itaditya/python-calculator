@@ -24,7 +24,7 @@ class Calculator:
         result = nums_sum / l
         return result
 
-    def cos(self, nums):
+    def cos(self,nums):
         result = list(map(math.cos, nums))
         return result
 
@@ -34,7 +34,7 @@ class Calculator:
         return result
 
     def m_to_cm(self, nums):
-        m_to_cm_unit = 100
+        m_to_cm_unit =100
         result = list(map(lambda x: m_to_cm_unit * x, nums))
         return result
 
