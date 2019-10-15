@@ -19,7 +19,9 @@ def calculate(operation, integers):
     return calc.multiply(integers)
   if (operation == 'average'):
     return calc.average(integers)
-
+  
+  if (operation == 'cos'):
+    return calc.cos(integers)  
 
   if (operation == 'sin'):
     return calc.sin(integers)  
@@ -30,10 +32,7 @@ def calculate(operation, integers):
 
   if (operation == 'tan'):
     return calc.tan(integers) 
- 
-
   return 0
-
 result = calculate(args.operation, args.integers)
 print('------')
 print(result)
