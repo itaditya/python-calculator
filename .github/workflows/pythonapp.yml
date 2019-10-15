@@ -20,4 +20,4 @@ jobs:
         pipenv install
     - name: Lint with autopep8
       run: |
-        autopep8 --diff *.py
+        pipenv run autopep8 --diff *.py
